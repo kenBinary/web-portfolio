@@ -16,5 +16,12 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'semi': ['error', 'always'],
+    'react/jsx-no-target-blank': 0,
+    'no-var': 'error',
+    'no-unused-vars': 'warn',
+    'no-console': 'error',
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": 'off',
   },
 }
