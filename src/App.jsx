@@ -1,5 +1,6 @@
 import NavBar from './components/NavBar';
 import AboutPage from './pages/AboutPage';
+import ProjectPage from './pages/ProjectPage';
 import SkillsPage from './pages/SkillsPage';
 import './styles/app.css';
 function App() {
@@ -8,7 +9,7 @@ function App() {
       <NavBar></NavBar>
       <AboutPage></AboutPage>
       <SkillsPage></SkillsPage>
-      <div className='test'></div>
+      <ProjectPage></ProjectPage>
       <div className='test-two'></div>
     </>
   );
