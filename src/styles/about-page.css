@@ -1,0 +1,108 @@
+.about-page {
+  outline: 1px solid black;
+  padding: 1rem;
+  height: 80dvh;
+  display: flex;
+}
+.about-page > .about-description {
+  box-sizing: border-box;
+  flex: 11;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+}
+.about-page > .about-description > #intro {
+  font-size: 1.3rem;
+}
+.about-page > .about-description > #name {
+  font-size: 4.5rem;
+}
+.about-page > .about-description > #description {
+  font-size: 1.6rem;
+}
+.about-page > .about-description > #resume-button {
+  padding: 0px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  background: hsl(0, 0%, 6%);
+}
+.about-page > .about-description > #resume-button > span {
+  display: block;
+  border: 2px solid hsl(0, 0%, 6%);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 6%);
+  transition: transform 0.1s ease;
+  display: flex !important;
+  align-items: center;
+}
+.about-page > .about-description > #resume-button > span > img {
+  width: 25px;
+  height: 25px;
+}
+.about-page > .about-description > #resume-button > span:hover {
+  transform: translate(-0.15rem, -0.15rem);
+}
+.about-page > .about-description > #social-links {
+  display: flex;
+  gap: 1rem;
+}
+.about-page > .about-description > #social-links button {
+  padding: 0px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  background: hsl(0, 0%, 6%);
+}
+.about-page > .about-description > #social-links button > span {
+  display: flex !important;
+  align-items: center;
+  gap: 0.2rem;
+  display: block;
+  border: 2px solid hsl(0, 0%, 6%);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 6%);
+  transition: transform 0.1s ease;
+}
+.about-page > .about-description > #social-links button > span > img {
+  width: 25px;
+  width: 25px;
+}
+.about-page > .about-description > #social-links button > span:hover {
+  transform: translate(-0.15rem, -0.15rem);
+}
+.about-page > .about-card {
+  flex: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-page > .about-card > #card {
+  width: 50%;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+.about-page > .about-card > #card > #card-overlay {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: green;
+}
+.about-page > .about-card > #card > #card-outline {
+  top: 0;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border: 1px solid blue;
+  transform: translate(15%, 15%);
+}
+
+/*# sourceMappingURL=about-page.css.map */

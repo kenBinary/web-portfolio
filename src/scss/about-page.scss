@@ -1,0 +1,105 @@
+@use "variables";
+@mixin button-base {
+    padding: 0px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    background: variables.$text-color;
+}
+@mixin button-style {
+    display: block;
+    border: 2px solid variables.$text-color;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background: variables.$background-color;
+    color: variables.$text-color;
+    transition: transform 0.1s ease;
+}
+@mixin button-hover {
+    transform: translate(-0.15rem, -0.15rem);
+}
+.about-page {
+    outline: 1px solid black;
+    padding: 1rem;
+    height: 80dvh;
+    display: flex;
+    > .about-description {
+        box-sizing: border-box;
+        flex: 11;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 5px;
+        > #intro {
+            font-size: 1.3rem;
+        }
+        > #name {
+            font-size: 4.5rem;
+        }
+        > #description {
+            font-size: 1.6rem;
+        }
+        > #resume-button {
+            @include button-base();
+            > span {
+                @include button-style();
+                display: flex !important;
+                align-items: center;
+                > img {
+                    width: 25px;
+                    height: 25px;
+                }
+                &:hover {
+                    @include button-hover();
+                }
+            }
+        }
+        > #social-links {
+            display: flex;
+            gap: 1rem;
+            button {
+                @include button-base();
+                > span {
+                    display: flex !important;
+                    align-items: center;
+                    gap: 0.2rem;
+                    > img {
+                        width: 25px;
+                        width: 25px;
+                    }
+                    @include button-style();
+                    &:hover {
+                        @include button-hover();
+                    }
+                }
+            }
+        }
+    }
+    > .about-card {
+        flex: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > #card {
+            width: 50%;
+            aspect-ratio: 1/1;
+            position: relative;
+            > #card-overlay {
+                width: 100%;
+                aspect-ratio: 1/1;
+                background-color: green;
+            }
+            > #card-outline {
+                top: 0;
+                z-index: -1;
+                position: absolute;
+                width: 100%;
+                aspect-ratio: 1/1;
+                border: 1px solid blue;
+                transform: translate(15%, 15%);
+            }
+        }
+    }
+}

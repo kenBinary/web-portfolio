@@ -20,7 +20,7 @@ module.exports = {
     'react/jsx-no-target-blank': 0,
     'no-var': 'error',
     'no-unused-vars': 'warn',
-    'no-console': 'error',
+    'no-console': 'warn',
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": 'off',
   },

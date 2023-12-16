@@ -1,12 +1,12 @@
-import { useState } from 'react';
 // import viteLogo from '/vite.svg';
 import NavBar from './components/NavBar';
+import AboutPage from './pages/AboutPage';
 import './styles/app.css';
 function App() {
   return (
     <>
       <NavBar></NavBar>
-      <div className='test'></div>
+      <AboutPage></AboutPage>
       <div className='test-two'></div>
       <div className='test'></div>
       <div className='test-two'></div>
