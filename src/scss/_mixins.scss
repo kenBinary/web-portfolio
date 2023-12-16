@@ -1,0 +1,21 @@
+@use "variables";
+@mixin button-base {
+    padding: 0px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    background: variables.$text-color;
+}
+@mixin button-style {
+    display: block;
+    border: 2px solid variables.$text-color;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background: variables.$background-color;
+    color: variables.$text-color;
+    transition: transform 0.1s ease;
+}
+@mixin button-hover {
+    transform: translate(-0.15rem, -0.15rem);
+}
