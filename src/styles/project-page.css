@@ -1,6 +1,7 @@
 .project-section {
   letter-spacing: 1px;
-  padding: 1rem;
+  padding: 1rem 9rem 1rem 9rem;
+  cursor: default;
 }
 .project-section > h1 {
   padding-bottom: 0.5rem;

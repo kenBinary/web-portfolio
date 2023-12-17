@@ -1,7 +1,7 @@
 .education-card-start {
     border-right: 4px solid black;
     &::after {
-        top: 20%;
+        top: 30%;
         right: -17px;
     }
     display: flex;
@@ -12,7 +12,7 @@
     align-self: flex-end;
     border-left: 4px solid black;
     &::after {
-        top: 20%;
+        top: 30%;
         left: -17px;
     }
 }

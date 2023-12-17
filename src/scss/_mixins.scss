@@ -19,3 +19,7 @@
 @mixin button-hover {
     transform: translate(-0.15rem, -0.15rem);
 }
+
+@mixin page-padding {
+    padding: 1rem 9rem 1rem 9rem;
+}

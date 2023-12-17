@@ -1,7 +1,9 @@
+@use "mixins";
+@use "variables";
 .education-section {
-    padding: 1rem;
-    background-color: pink;
     letter-spacing: 1px;
+    padding: 1rem;
+    @include mixins.page-padding();
     > .education {
         display: flex;
         flex-direction: column;
@@ -17,11 +19,11 @@
                 width: 30px;
                 border-radius: 100%;
                 aspect-ratio: 1/1;
-                background-color: blue;
+                background-color: variables.$primary-color;
                 position: absolute;
             }
             &:hover::after {
-                background-color: yellow;
+                background-color: variables.$text-color;
             }
             > * {
                 cursor: default;

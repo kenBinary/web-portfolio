@@ -5,7 +5,7 @@
   align-items: flex-end;
 }
 .education-card-start::after {
-  top: 20%;
+  top: 30%;
   right: -17px;
 }
 
@@ -14,7 +14,7 @@
   border-left: 4px solid black;
 }
 .education-card-end::after {
-  top: 20%;
+  top: 30%;
   left: -17px;
 }
 

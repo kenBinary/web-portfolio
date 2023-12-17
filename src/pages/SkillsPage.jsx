@@ -46,7 +46,6 @@ export default function SkillsPage() {
                     <TechCard name={'node'} image={nodeLogo}></TechCard>
                     <TechCard name={'node'} image={nodeLogo}></TechCard>
                     <TechCard name={'node'} image={nodeLogo}></TechCard>
-
                 </div>
             </section>
         </section>

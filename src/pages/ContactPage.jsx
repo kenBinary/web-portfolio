@@ -3,7 +3,10 @@ export default function ContactPage() {
     return (
         <section className="contact-page">
             <h1>Contact</h1>
-            <p>Feel free to contact me directly on <span>test@gmail.com</span></p>
+            <p>
+                Feel free to contact me directly on
+                <span> <a href="mailto:kennethbecaro0@gmail.com">kennethbecaro0@gmail.com</a></span>
+            </p>
             <div className='copyright'>
                 2023 - Made by kenneth joshua becaro
             </div>

@@ -1,7 +1,9 @@
 @use "variables";
+@use "mixins";
 .project-section {
     letter-spacing: 1px;
-    padding: 1rem;
+    @include mixins.page-padding();
+    cursor: default;
     > h1 {
         padding-bottom: 0.5rem;
         border-bottom: 1px solid variables.$text-color;

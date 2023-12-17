@@ -1,7 +1,7 @@
 .education-section {
-  padding: 1rem;
-  background-color: pink;
   letter-spacing: 1px;
+  padding: 1rem;
+  padding: 1rem 9rem 1rem 9rem;
 }
 .education-section > .education {
   display: flex;
@@ -20,11 +20,11 @@
   width: 30px;
   border-radius: 100%;
   aspect-ratio: 1/1;
-  background-color: blue;
+  background-color: hsl(230, 84%, 69%);
   position: absolute;
 }
 .education-section > .education > .education-card:hover::after {
-  background-color: yellow;
+  background-color: hsl(0, 0%, 6%);
 }
 .education-section > .education > .education-card > * {
   cursor: default;

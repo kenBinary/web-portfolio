@@ -1,17 +1,22 @@
+@use "mixins";
+@use "variables";
 .contact-page {
     letter-spacing: 1px;
-    padding: 1rem;
+    // padding: 1rem;
+    @include mixins.page-padding();
     display: flex;
     flex-direction: column;
     > h1 {
-        padding: 1rem;
+        padding: 0.6rem 0rem 0.6rem 0rem;
     }
     > p {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-bottom: 0.5rem;
-        padding-top: 0.5rem;
-        border-bottom: 2px solid black;
+        padding: 0.5rem 0rem 0.5rem 0rem;
+        border-bottom: 2px solid variables.$text-color;
+        font-size: 1.1rem;
+        color: grey;
+        a {
+            color: black;
+        }
     }
     > .copyright {
         padding: 1rem;
