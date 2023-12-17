@@ -4,6 +4,7 @@
     letter-spacing: 1px;
     padding: 1rem;
     @include mixins.page-padding();
+    @include mixins.border-shadow();
     background-color: variables.$background-alternate;
     > h1 {
         color: variables.$tertiary;
@@ -25,18 +26,19 @@
                 width: 30px;
                 border-radius: 100%;
                 aspect-ratio: 1/1;
-                // background-color: variables.$primary;
                 background-color: variables.$accent;
                 position: absolute;
             }
             &:hover::after {
-                // background-color: variables.$text-color;
                 background-color: variables.$tertiary;
             }
             > div {
                 padding: 0.5rem;
                 border: 2px solid variables.$tertiary;
                 border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
                 > #university {
                     color: variables.$tertiary;
                     font-weight: bold;
@@ -44,6 +46,15 @@
                 > #degree,
                 #address {
                     color: variables.$paragraph;
+                }
+                > p {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    > img {
+                        aspect-ratio: 1/1;
+                        width: 25px;
+                    }
                 }
             }
         }

@@ -2,6 +2,7 @@
   letter-spacing: 1px;
   padding: 1rem;
   padding: 1rem 9rem 1rem 9rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   background-color: #d8eefe;
 }
 .education-section > h1 {
@@ -36,6 +37,9 @@
   padding: 0.5rem;
   border: 2px solid #094067;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 .education-section > .education > .education-card > div > #university {
   color: #094067;
@@ -44,6 +48,15 @@
 .education-section > .education > .education-card > div > #degree,
 .education-section > .education > .education-card > div #address {
   color: #5f6c7b;
+}
+.education-section > .education > .education-card > div > p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.education-section > .education > .education-card > div > p > img {
+  aspect-ratio: 1/1;
+  width: 25px;
 }
 
 /*# sourceMappingURL=education-page.css.map */
