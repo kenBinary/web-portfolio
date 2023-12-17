@@ -9,14 +9,14 @@ export default function AboutPage() {
     return (
         <section className="about-page">
             <div className='about-description'>
-                <p id='intro'>{`Hello I'm`}</p>
+                <p id='intro'>{`Hello, I'm`}</p>
                 <h1 id='name'>Kenneth Becaro</h1>
                 <p id='description'>
                     <span>
                         Fullstack Developer;
                     </span>
                     {' '}Passionate in this field, I am equipped with skills that enable me to
-                    solve real-world problems, transforming ideas into software solutions
+                    solve real-world problems, transforming ideas into software solutions.
                 </p>
                 <button id='resume-button'>
                     <span>

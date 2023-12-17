@@ -1,15 +1,15 @@
 @use "mixins";
 @use "variables";
 .skills-page {
+    @include mixins.page-padding();
+    @include mixins.border-shadow();
     cursor: default;
     letter-spacing: 1px;
-    @include mixins.page-padding();
     display: flex;
     flex-direction: column;
     gap: 5px;
     background-color: variables.$background-alternate;
     > h2 {
-        // border-bottom: 2px solid variables.$text-color;
         border-bottom: 2px solid variables.$tertiary;
         color: variables.$tertiary;
         padding-bottom: 0.5rem;
@@ -26,11 +26,8 @@
             grid-template-columns: repeat(4, 1fr);
             gap: 10px;
             > .card {
-                // border: 1px solid variables.$text-color;
                 background-color: variables.$background;
-                box-shadow:
-                    rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-                    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                @include mixins.border-shadow();
                 border-radius: 0.4rem;
                 height: 60px;
                 padding: 0.4rem;
@@ -41,11 +38,17 @@
                 font-weight: 500;
                 > .image-container {
                     height: 85%;
+                    width: 20%;
                     border-radius: 0.2rem;
                     padding: 0.4rem;
-                    background-color: variables.$paragraph;
+                    background-color: rgb(144, 180, 206, 0.1) !important;
+                    box-shadow:
+                        rgba(9, 64, 103, 0.02) 0px 1px 3px 0px,
+                        rgba(9, 64, 103, 0.15) 0px 0px 0px 1px;
                     > img {
                         height: 100%;
+                        width: 100%;
+                        object-fit: contain;
                     }
                 }
             }

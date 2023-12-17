@@ -1,7 +1,8 @@
 .skills-page {
+  padding: 1rem 9rem 1rem 9rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   cursor: default;
   letter-spacing: 1px;
-  padding: 1rem 9rem 1rem 9rem;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -39,12 +40,16 @@
 }
 .skills-page > .tech-section > .cards > .card > .image-container {
   height: 85%;
+  width: 20%;
   border-radius: 0.2rem;
   padding: 0.4rem;
-  background-color: #5f6c7b;
+  background-color: rgba(144, 180, 206, 0.1) !important;
+  box-shadow: rgba(9, 64, 103, 0.02) 0px 1px 3px 0px, rgba(9, 64, 103, 0.15) 0px 0px 0px 1px;
 }
 .skills-page > .tech-section > .cards > .card > .image-container > img {
   height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=skills-page.css.map */

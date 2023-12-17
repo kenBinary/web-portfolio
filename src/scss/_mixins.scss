@@ -5,7 +5,6 @@
     font-weight: bold;
     border: none;
     border-radius: 0.5rem;
-    // background: variables.$text-color;
     background-color: $color;
 }
 @mixin button-style(
@@ -16,11 +15,8 @@
     display: block;
     border-radius: 0.5rem;
     padding: 0.5rem;
-    // border: 2px solid variables.$text-color;
     border: 2px solid $borderColor;
-    // background: variables.$background-color;
     background-color: $backgroundColor;
-    // color: variables.$text-color;
     color: $textColor;
     transition: transform 0.1s ease;
 }
@@ -30,4 +26,9 @@
 
 @mixin page-padding {
     padding: 1rem 9rem 1rem 9rem;
+}
+@mixin border-shadow {
+    box-shadow:
+        rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
