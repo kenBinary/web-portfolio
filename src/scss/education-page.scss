@@ -1,0 +1,30 @@
+.education-section {
+    padding: 1rem;
+    background-color: pink;
+    > .education {
+        display: flex;
+        flex-direction: column;
+        > .education-card {
+            width: calc(50% + 2px);
+            position: relative;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            &::after {
+                content: "";
+                width: 30px;
+                border-radius: 100%;
+                aspect-ratio: 1/1;
+                background-color: blue;
+                position: absolute;
+            }
+            &:hover::after {
+                background-color: yellow;
+            }
+            > * {
+                cursor: default;
+            }
+        }
+    }
+}

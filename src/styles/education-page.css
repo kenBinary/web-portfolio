@@ -1,0 +1,32 @@
+.education-section {
+  padding: 1rem;
+  background-color: pink;
+}
+.education-section > .education {
+  display: flex;
+  flex-direction: column;
+}
+.education-section > .education > .education-card {
+  width: calc(50% + 2px);
+  position: relative;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.education-section > .education > .education-card::after {
+  content: "";
+  width: 30px;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  background-color: blue;
+  position: absolute;
+}
+.education-section > .education > .education-card:hover::after {
+  background-color: yellow;
+}
+.education-section > .education > .education-card > * {
+  cursor: default;
+}
+
+/*# sourceMappingURL=education-page.css.map */
