@@ -6,6 +6,7 @@ export default function NavBar() {
                 <li>{`// about`}</li>
                 <li>{`// skills`}</li>
                 <li>{`// projects`}</li>
+                <li>{`// education`}</li>
                 <li>{`// contact`}</li>
             </ul>
         </nav>

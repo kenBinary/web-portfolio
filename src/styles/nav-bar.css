@@ -2,7 +2,9 @@
   position: sticky;
   z-index: 999;
   top: 0;
-  background-color: hsl(0, 0%, 100%);
+  background-color: rgba(216, 238, 254, 0.6);
+  backdrop-filter: blur(10px) saturate(100%);
+  opacity: 1;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 .nav-bar > ul {
@@ -18,7 +20,24 @@
   font-size: 1.3rem;
   letter-spacing: 1px;
   cursor: pointer;
-  color: hsl(0, 0%, 6%);
+  color: #094067;
+  font-weight: bold;
+  box-sizing: border-box !important;
+  border-bottom: 2px solid transparent;
+  position: relative;
+}
+.nav-bar > ul > li::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #3da9fc;
+  bottom: 2px;
+  transition: 0.1s ease-in;
+}
+.nav-bar > ul > li:hover::before {
+  background-color: #3da9fc;
+  width: 100%;
 }
 
 /*# sourceMappingURL=nav-bar.css.map */

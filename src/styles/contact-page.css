@@ -6,19 +6,22 @@
 }
 .contact-page > h1 {
   padding: 0.6rem 0rem 0.6rem 0rem;
+  font-size: 2.2rem;
+  color: #094067;
 }
 .contact-page > p {
   padding: 0.5rem 0rem 0.5rem 0rem;
-  border-bottom: 2px solid hsl(0, 0%, 6%);
+  border-bottom: 2px solid #094067;
   font-size: 1.1rem;
-  color: grey;
+  color: #5f6c7b;
 }
 .contact-page > p a {
-  color: black;
+  color: #094067;
 }
 .contact-page > .copyright {
-  padding: 1rem;
+  padding: 1rem 1rem 0rem 1rem;
   align-self: center;
+  color: #094067;
 }
 
 /*# sourceMappingURL=contact-page.css.map */

@@ -15,11 +15,14 @@
 }
 .about-page > .about-description > #intro {
   font-size: 1.3rem;
+  color: #5f6c7b;
 }
 .about-page > .about-description > #name {
   font-size: 4.5rem;
+  color: #094067;
 }
 .about-page > .about-description > #description {
+  color: #5f6c7b;
   font-size: 1.6rem;
 }
 .about-page > .about-description > #resume-button {
@@ -28,15 +31,15 @@
   font-weight: bold;
   border: none;
   border-radius: 0.5rem;
-  background: hsl(0, 0%, 6%);
+  background-color: #094067;
 }
 .about-page > .about-description > #resume-button > span {
   display: block;
-  border: 2px solid hsl(0, 0%, 6%);
   border-radius: 0.5rem;
   padding: 0.5rem;
-  background: hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 6%);
+  border: 2px solid #094067;
+  background-color: #3da9fc;
+  color: #fffffe;
   transition: transform 0.1s ease;
   display: flex !important;
   align-items: center;
@@ -58,18 +61,18 @@
   font-weight: bold;
   border: none;
   border-radius: 0.5rem;
-  background: hsl(0, 0%, 6%);
+  background-color: #094067;
 }
 .about-page > .about-description > #social-links button > span {
   display: flex !important;
   align-items: center;
   gap: 0.2rem;
   display: block;
-  border: 2px solid hsl(0, 0%, 6%);
   border-radius: 0.5rem;
   padding: 0.5rem;
-  background: hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 6%);
+  border: 2px solid #094067;
+  background-color: #3da9fc;
+  color: #fffffe;
   transition: transform 0.1s ease;
 }
 .about-page > .about-description > #social-links button > span > img {
@@ -93,7 +96,7 @@
 .about-page > .about-card > #card > #card-overlay {
   width: 100%;
   aspect-ratio: 1/1;
-  background-color: green;
+  background-color: #3da9fc;
 }
 .about-page > .about-card > #card > #card-outline {
   top: 0;
@@ -101,7 +104,7 @@
   position: absolute;
   width: 100%;
   aspect-ratio: 1/1;
-  border: 1px solid hsl(0, 0%, 6%);
+  border: 2px solid #094067;
   transform: translate(15%, 15%);
 }
 

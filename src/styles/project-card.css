@@ -17,24 +17,30 @@
 }
 .project-card > .project-info > h1 {
   font-size: 2.5rem;
+  color: #094067;
+}
+.project-card > .project-info > P {
+  color: #5f6c7b;
+  font-size: 1.1rem;
 }
 .project-card > .project-info > .tech-stack {
   display: flex;
   gap: 0.5rem;
 }
-.project-card > .project-info > .tech-stack > div {
+.project-card > .project-info > .tech-stack > .card {
   display: flex;
   align-items: center;
   gap: 5px;
   padding: 0.3rem;
   height: 35px;
-  border: 1px solid hsl(0, 0%, 6%);
-  border-radius: 0.5rem;
+  color: #094067;
+  border: 2px solid #094067;
+  border-radius: 3px;
 }
-.project-card > .project-info > .tech-stack > div > * {
+.project-card > .project-info > .tech-stack > .card > * {
   flex: 1;
 }
-.project-card > .project-info > .tech-stack > div > img {
+.project-card > .project-info > .tech-stack > .card > img {
   height: 100%;
 }
 .project-card > .project-info > .project-actions {
@@ -47,15 +53,15 @@
   font-weight: bold;
   border: none;
   border-radius: 0.5rem;
-  background: hsl(0, 0%, 6%);
+  background-color: #094067;
 }
 .project-card > .project-info > .project-actions > button > span {
   display: block;
-  border: 2px solid hsl(0, 0%, 6%);
   border-radius: 0.5rem;
   padding: 0.5rem;
-  background: hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 6%);
+  border: 2px solid #094067;
+  background-color: #3da9fc;
+  color: #fffffe;
   transition: transform 0.1s ease;
   display: flex !important;
   align-items: center;

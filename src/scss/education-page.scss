@@ -4,10 +4,16 @@
     letter-spacing: 1px;
     padding: 1rem;
     @include mixins.page-padding();
+    background-color: variables.$background-alternate;
+    > h1 {
+        color: variables.$tertiary;
+        font-size: 2.2rem;
+    }
     > .education {
         display: flex;
         flex-direction: column;
         > .education-card {
+            cursor: default;
             width: calc(50% + 2px);
             position: relative;
             padding-left: 2rem;
@@ -19,14 +25,26 @@
                 width: 30px;
                 border-radius: 100%;
                 aspect-ratio: 1/1;
-                background-color: variables.$primary-color;
+                // background-color: variables.$primary;
+                background-color: variables.$accent;
                 position: absolute;
             }
             &:hover::after {
-                background-color: variables.$text-color;
+                // background-color: variables.$text-color;
+                background-color: variables.$tertiary;
             }
-            > * {
-                cursor: default;
+            > div {
+                padding: 0.5rem;
+                border: 2px solid variables.$tertiary;
+                border-radius: 5px;
+                > #university {
+                    color: variables.$tertiary;
+                    font-weight: bold;
+                }
+                > #degree,
+                #address {
+                    color: variables.$paragraph;
+                }
             }
         }
     }

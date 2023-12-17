@@ -15,12 +15,18 @@ export default function ProjectCard() {
                     soluta eum. Ipsam molestiae voluptatem ipsa consequatur.
                 </p>
                 <div className='tech-stack'>
-                    <div>
+                    <div className='card'>
                         <img src={nodeLogo} alt="" />
                         React
                     </div>
-                    <div>Express</div>
-                    <div>Javascript</div>
+                    <div className='card'>
+                        <img src={nodeLogo} alt="" />
+                        React
+                    </div>
+                    <div className='card'>
+                        <img src={nodeLogo} alt="" />
+                        React
+                    </div>
                 </div>
                 <div className='project-actions'>
                     <button>

@@ -2,24 +2,29 @@
 @use "variables";
 .contact-page {
     letter-spacing: 1px;
-    // padding: 1rem;
     @include mixins.page-padding();
     display: flex;
     flex-direction: column;
     > h1 {
         padding: 0.6rem 0rem 0.6rem 0rem;
+        font-size: 2.2rem;
+        color: variables.$tertiary;
     }
     > p {
         padding: 0.5rem 0rem 0.5rem 0rem;
-        border-bottom: 2px solid variables.$text-color;
+        // border-bottom: 2px solid variables.$text-color;
+        border-bottom: 2px solid variables.$tertiary;
         font-size: 1.1rem;
-        color: grey;
+        // color: grey;
+        color: variables.$paragraph;
         a {
-            color: black;
+            // color: black;
+            color: variables.$tertiary;
         }
     }
     > .copyright {
-        padding: 1rem;
+        padding: 1rem 1rem 0rem 1rem;
         align-self: center;
+        color: variables.$tertiary;
     }
 }

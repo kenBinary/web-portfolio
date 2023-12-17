@@ -1,19 +1,27 @@
 @use "variables";
-@mixin button-base {
+@mixin button-base($color: variables.$tertiary) {
     padding: 0px;
     cursor: pointer;
     font-weight: bold;
     border: none;
     border-radius: 0.5rem;
-    background: variables.$text-color;
+    // background: variables.$text-color;
+    background-color: $color;
 }
-@mixin button-style {
+@mixin button-style(
+    $borderColor: variables.$tertiary,
+    $backgroundColor: variables.$button,
+    $textColor: variables.$background
+) {
     display: block;
-    border: 2px solid variables.$text-color;
     border-radius: 0.5rem;
     padding: 0.5rem;
-    background: variables.$background-color;
-    color: variables.$text-color;
+    // border: 2px solid variables.$text-color;
+    border: 2px solid $borderColor;
+    // background: variables.$background-color;
+    background-color: $backgroundColor;
+    // color: variables.$text-color;
+    color: $textColor;
     transition: transform 0.1s ease;
 }
 @mixin button-hover {
