@@ -1,40 +1,47 @@
 import '../styles/project-card.css';
-import phoneMockup from '/device-mockups/phone.png';
-import nodeLogo from '/tech-logos/nodejs.svg';
-
-
-export default function ProjectCard() {
+export default function ProjectCard({
+    appScreen, projectTitle,
+    projectDescription, projectHighlight = false,
+    techStack, codeLink,
+    demoLInk,
+}) {
     return (
         <section className="project-card">
-            <img src={phoneMockup} alt="" />
+            <img src={appScreen} alt="" />
             <div className='project-info'>
-                <h1>Project Title</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sit quasi nam ex architecto, repudiandae, ratione quam
-                    nemo dolor blanditiis, ullam corrupti. Quos inventore
-                    soluta eum. Ipsam molestiae voluptatem ipsa consequatur.
-                </p>
+                <h1>{projectTitle}</h1>
+                <p>{projectDescription}</p>
+                {
+                    projectHighlight &&
+                    <ul>
+                        {projectHighlight.map((highlight, index) => {
+                            return <li key={index}>{highlight}</li>;
+                        })}
+                    </ul>
+                }
                 <div className='tech-stack'>
-                    <div className='card'>
-                        <img src={nodeLogo} alt="" />
-                        React
-                    </div>
-                    <div className='card'>
-                        <img src={nodeLogo} alt="" />
-                        React
-                    </div>
-                    <div className='card'>
-                        <img src={nodeLogo} alt="" />
-                        React
-                    </div>
+                    {
+                        Object.keys(techStack).map((name, index) => {
+                            return (
+                                <div key={index} className='card'>
+                                    <img src={techStack[name]} alt={name} />
+                                    {name}
+                                </div>
+                            );
+                        })
+                    }
                 </div>
                 <div className='project-actions'>
-                    <button>
-                        <span>Source Code</span>
-                    </button>
-                    <button>
-                        <span>Live Demo</span>
-                    </button>
+                    <a href={codeLink} target='_blank'>
+                        <button>
+                            <span>Source Code</span>
+                        </button>
+                    </a>
+                    <a href={demoLInk} target='_blank'>
+                        <button>
+                            <span>Live Demo</span>
+                        </button>
+                    </a>
                 </div>
             </div>
         </section>

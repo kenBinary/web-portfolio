@@ -14,7 +14,7 @@ export default function EducationPage() {
                 ></EducationCard>
                 <EducationCard
                     alignment={'end'}
-                    university={'STI malaybalay (2019-2021)'}
+                    university={'STI Malaybalay (2019-2021)'}
                     degree={'IT in mobile app and web development'}
                     address={'Malaybalay City, Philippines'}
                 ></EducationCard>

@@ -12,14 +12,12 @@
     }
     > p {
         padding: 0.5rem 0rem 0.5rem 0rem;
-        // border-bottom: 2px solid variables.$text-color;
         border-bottom: 2px solid variables.$tertiary;
         font-size: 1.1rem;
-        // color: grey;
         color: variables.$paragraph;
         a {
-            // color: black;
             color: variables.$tertiary;
+            text-decoration: underline;
         }
     }
     > .copyright {

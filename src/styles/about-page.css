@@ -25,6 +25,10 @@
   color: #5f6c7b;
   font-size: 1.6rem;
 }
+.about-page > .about-description > #description > span {
+  font-weight: bold;
+  color: #3da9fc;
+}
 .about-page > .about-description > #resume-button {
   padding: 0px;
   cursor: pointer;
@@ -43,6 +47,7 @@
   transition: transform 0.1s ease;
   display: flex !important;
   align-items: center;
+  gap: 0.2rem;
 }
 .about-page > .about-description > #resume-button > span > img {
   width: 25px;
