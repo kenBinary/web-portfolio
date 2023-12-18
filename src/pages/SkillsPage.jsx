@@ -4,7 +4,7 @@ import { techLogos } from './utils/techLogos';
 
 export default function SkillsPage() {
     return (
-        <section className='skills-page'>
+        <section id='skills' className='skills-page'>
             <h2>Tech I use</h2>
             <section className='tech-section'>
                 <h3>Languages</h3>

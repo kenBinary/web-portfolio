@@ -3,7 +3,7 @@ import '../styles/education-page.css';
 export default function EducationPage() {
 
     return (
-        <section className="education-section">
+        <section id='education' className="education-section">
             <h1>Education</h1>
             <div className='education'>
                 <EducationCard

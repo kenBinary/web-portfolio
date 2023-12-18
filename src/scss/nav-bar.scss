@@ -17,29 +17,34 @@
         display: flex;
         justify-content: center;
         gap: 0.5rem;
-        > li {
-            padding: 0.5rem;
-            font-size: 1.3rem;
-            letter-spacing: 1px;
-            cursor: pointer;
-            // color: variables.$text-color;
-            color: variables.$tertiary;
-            font-weight: bold;
-            box-sizing: border-box !important;
-            border-bottom: 2px solid transparent;
-            position: relative;
-            &::before {
-                content: "";
-                position: absolute;
-                width: 0%;
-                height: 2px;
-                background-color: variables.$button;
-                bottom: 2px;
-                transition: .1s ease-in;
-            }
-            &:hover::before {
-                background-color: variables.$button;
-                width: 100%;
+        > a {
+            > li {
+                padding: 0.5rem;
+                font-size: 1.3rem;
+                letter-spacing: 1px;
+                cursor: pointer;
+                color: variables.$tertiary;
+                font-weight: bold;
+                box-sizing: border-box !important;
+                border-bottom: 2px solid transparent;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 0%;
+                    height: 2px;
+                    background-color: variables.$button;
+                    bottom: 2px;
+                    transition: 0.1s ease-in;
+                }
+                &:hover::before {
+                    background-color: variables.$button;
+                    width: 100%;
+                }
+                &.clicked::before {
+                    background-color: variables.$button;
+                    width: 100%;
+                }
             }
         }
     }

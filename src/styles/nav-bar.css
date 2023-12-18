@@ -15,7 +15,7 @@
   justify-content: center;
   gap: 0.5rem;
 }
-.nav-bar > ul > li {
+.nav-bar > ul > a > li {
   padding: 0.5rem;
   font-size: 1.3rem;
   letter-spacing: 1px;
@@ -26,7 +26,7 @@
   border-bottom: 2px solid transparent;
   position: relative;
 }
-.nav-bar > ul > li::before {
+.nav-bar > ul > a > li::before {
   content: "";
   position: absolute;
   width: 0%;
@@ -35,7 +35,11 @@
   bottom: 2px;
   transition: 0.1s ease-in;
 }
-.nav-bar > ul > li:hover::before {
+.nav-bar > ul > a > li:hover::before {
+  background-color: #3da9fc;
+  width: 100%;
+}
+.nav-bar > ul > a > li.clicked::before {
   background-color: #3da9fc;
   width: 100%;
 }

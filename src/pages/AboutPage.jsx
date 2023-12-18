@@ -7,7 +7,7 @@ import linkedinLogo from '/linkedin.png';
 
 export default function AboutPage() {
     return (
-        <section className="about-page">
+        <section id='about' className="about-page">
             <div className='about-description'>
                 <p id='intro'>{`Hello, I'm`}</p>
                 <h1 id='name'>Kenneth Becaro</h1>

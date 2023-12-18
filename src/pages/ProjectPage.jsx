@@ -18,7 +18,7 @@ export default function ProjectPage() {
     };
     let projectHighlight2 = ['database normalized up to 3rd normal form', 'database has views,procedures and transactions', 'REST api'];
     return (
-        <section className="project-section">
+        <section id='projects' className="project-section">
             <h1>Projects</h1>
             <section className='project-list'>
                 <ProjectCard
