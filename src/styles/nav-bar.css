@@ -1,6 +1,6 @@
 .nav-bar {
   position: sticky;
-  z-index: 999;
+  z-index: 100;
   top: 0;
   background-color: rgba(216, 238, 254, 0.6);
   backdrop-filter: blur(10px) saturate(100%);
