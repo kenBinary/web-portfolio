@@ -9,6 +9,7 @@
     flex-direction: column;
     gap: 5px;
     background-color: variables.$background-alternate;
+    border: 1px solid variables.$tertiary;
     > h2 {
         border-bottom: 2px solid variables.$tertiary;
         color: variables.$tertiary;
@@ -26,6 +27,7 @@
             grid-template-columns: repeat(4, 1fr);
             gap: 10px;
             > .card {
+                border: 1px solid variables.$tertiary;
                 background-color: variables.$background;
                 @include mixins.border-shadow();
                 border-radius: 0.4rem;

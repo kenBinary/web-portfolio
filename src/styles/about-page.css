@@ -101,7 +101,15 @@
 .about-page > .about-card > #card > #card-overlay {
   width: 100%;
   aspect-ratio: 1/1;
-  background-color: #3da9fc;
+  background-color: #90b4ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-page > .about-card > #card > #card-overlay > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 .about-page > .about-card > #card > #card-outline {
   top: 0;

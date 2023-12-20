@@ -8,7 +8,7 @@ export default function ContactPage() {
                 <span> <a href="mailto:kennethbecaro0@gmail.com">kennethbecaro0@gmail.com</a></span>
             </p>
             <div className='copyright'>
-                2023 - Made by kenneth joshua becaro
+                © 2023 - Made by kenneth joshua becaro
             </div>
         </section>
     );

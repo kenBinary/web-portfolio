@@ -30,7 +30,7 @@ export default function ProjectPage() {
                     appScreen={bhDemo} projectTitle={'Boarding House Management System'}
                     projectDescription={description2} projectHighlight={projectHighlight2}
                     techStack={techStack2} codeLink={'https://github.com/kenBinary/fitster'}
-                    demoLInk={''}
+                    demoLInk={''} isLeft={false}
                 ></ProjectCard>
             </section>
         </section>

@@ -7,6 +7,7 @@
   flex-direction: column;
   gap: 5px;
   background-color: #d8eefe;
+  border: 1px solid #094067;
 }
 .skills-page > h2 {
   border-bottom: 2px solid #094067;
@@ -27,6 +28,7 @@
   gap: 10px;
 }
 .skills-page > .tech-section > .cards > .card {
+  border: 1px solid #094067;
   background-color: #fffffe;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   border-radius: 0.4rem;

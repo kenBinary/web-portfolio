@@ -3,6 +3,7 @@ import resumeLogo from '/resume.png';
 import facebookLogo from '/facebook.png';
 import githubLogo from '/github.png';
 import linkedinLogo from '/linkedin.png';
+import profileImage from '/coding-guy.png';
 
 
 export default function AboutPage() {
@@ -48,7 +49,7 @@ export default function AboutPage() {
             <div className='about-card'>
                 <div id='card'>
                     <div id='card-overlay'>
-
+                        <img src={profileImage} alt="" />
                     </div>
                     <div id='card-outline'>
 

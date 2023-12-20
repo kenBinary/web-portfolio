@@ -5,6 +5,7 @@
     padding: 1rem;
     @include mixins.page-padding();
     @include mixins.border-shadow();
+    border: 1px solid variables.$tertiary;
     background-color: variables.$background-alternate;
     > h1 {
         color: variables.$tertiary;
