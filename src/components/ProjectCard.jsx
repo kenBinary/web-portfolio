@@ -2,8 +2,8 @@ import '../styles/project-card.css';
 export default function ProjectCard({
     appScreen, projectTitle,
     projectDescription, projectHighlight = false,
-    techStack, codeLink,
-    demoLInk, isLeft = true,
+    techStack, isLeft = true,
+    projectLinks,
 }) {
     if (isLeft) {
         return (
@@ -33,16 +33,17 @@ export default function ProjectCard({
                         }
                     </div>
                     <div className='project-actions'>
-                        <a href={codeLink} target='_blank'>
-                            <button>
-                                <span>Source Code</span>
-                            </button>
-                        </a>
-                        <a href={demoLInk} target='_blank'>
-                            <button>
-                                <span>Live Demo</span>
-                            </button>
-                        </a>
+                        {
+                            projectLinks.map((link, index) => {
+                                return (
+                                    <a key={index} href={link.url} target='_blank'>
+                                        <button>
+                                            <span>{link.linkName}</span>
+                                        </button>
+                                    </a>
+                                );
+                            })
+                        }
                     </div>
                 </div>
             </section>
@@ -74,16 +75,17 @@ export default function ProjectCard({
                     }
                 </div>
                 <div className='project-actions'>
-                    <a href={codeLink} target='_blank'>
-                        <button>
-                            <span>Source Code</span>
-                        </button>
-                    </a>
-                    <a href={demoLInk} target='_blank'>
-                        <button>
-                            <span>Live Demo</span>
-                        </button>
-                    </a>
+                    {
+                        projectLinks.map((link, index) => {
+                            return (
+                                <a key={index} href={link.url} target='_blank'>
+                                    <button>
+                                        <span>{link.linkName}</span>
+                                    </button>
+                                </a>
+                            );
+                        })
+                    }
                 </div>
             </div>
             <img src={appScreen} alt="" />

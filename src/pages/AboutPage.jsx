@@ -26,24 +26,30 @@ export default function AboutPage() {
                     </span>
                 </button>
                 <div id='social-links'>
-                    <button>
-                        <span>
-                            <img src={githubLogo} alt="" />
-                            Github
-                        </span>
-                    </button>
-                    <button>
-                        <span>
-                            <img src={linkedinLogo} alt="" />
-                            Linkedin
-                        </span>
-                    </button>
-                    <button>
-                        <span>
-                            <img src={facebookLogo} alt="" />
-                            Facebook
-                        </span>
-                    </button>
+                    <a href="https://github.com/kenBinary" target='_blank'>
+                        <button>
+                            <span>
+                                <img src={githubLogo} alt="" />
+                                Github
+                            </span>
+                        </button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kjbdev/" target='_blank'>
+                        <button>
+                            <span>
+                                <img src={linkedinLogo} alt="" />
+                                Linkedin
+                            </span>
+                        </button>
+                    </a>
+                    <a href="https://www.facebook.com/kjbDev/" target='_blank'>
+                        <button>
+                            <span>
+                                <img src={facebookLogo} alt="" />
+                                Facebook
+                            </span>
+                        </button>
+                    </a>
                 </div>
             </div>
             <div className='about-card'>
