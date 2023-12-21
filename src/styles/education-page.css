@@ -28,15 +28,16 @@
   width: 30px;
   border-radius: 100%;
   aspect-ratio: 1/1;
-  background-color: #ef4565;
+  background-color: #094067;
   position: absolute;
 }
 .education-section > .education > .education-card:hover::after {
-  background-color: #094067;
+  background-color: #ef4565;
 }
 .education-section > .education > .education-card > div {
   padding: 0.5rem;
   border: 2px solid #094067;
+  background-color: #fffffe;
   border-radius: 5px;
   display: flex;
   flex-direction: column;

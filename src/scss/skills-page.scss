@@ -19,38 +19,45 @@
     > .tech-section {
         flex: 1;
         > h3 {
-            padding: 0.3rem 0 0.3rem 0;
+            padding: 0.3rem 0 1rem 0;
             color: variables.$tertiary;
         }
         > .cards {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            > .card {
-                border: 1px solid variables.$tertiary;
-                background-color: variables.$background;
-                @include mixins.border-shadow();
-                border-radius: 0.4rem;
+            gap: 1rem;
+            > div {
                 height: 60px;
-                padding: 0.4rem;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                font-size: 1.1rem;
-                font-weight: 500;
-                > .image-container {
-                    height: 85%;
-                    width: 20%;
-                    border-radius: 0.2rem;
+                background-color: variables.$tertiary;
+                border-radius: 0.4rem;
+                > .card {
+                    border: 1px solid variables.$tertiary;
+                    background-color: variables.$background;
+                    @include mixins.border-shadow();
+                    border-radius: 0.4rem;
+                    transform: translate(-1.5%, -6%);
+                    height: 100%;
                     padding: 0.4rem;
-                    background-color: rgb(144, 180, 206, 0.1) !important;
-                    box-shadow:
-                        rgba(9, 64, 103, 0.02) 0px 1px 3px 0px,
-                        rgba(9, 64, 103, 0.15) 0px 0px 0px 1px;
-                    > img {
-                        height: 100%;
-                        width: 100%;
-                        object-fit: contain;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    color: variables.$tertiary;
+                    > .image-container {
+                        height: 85%;
+                        width: 20%;
+                        border-radius: 0.2rem;
+                        padding: 0.4rem;
+                        background-color: rgb(144, 180, 206, 0.1) !important;
+                        box-shadow:
+                            rgba(9, 64, 103, 0.02) 0px 1px 3px 0px,
+                            rgba(9, 64, 103, 0.15) 0px 0px 0px 1px;
+                        > img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: contain;
+                        }
                     }
                 }
             }

@@ -27,15 +27,16 @@
                 width: 30px;
                 border-radius: 100%;
                 aspect-ratio: 1/1;
-                background-color: variables.$accent;
+                background-color: variables.$tertiary;
                 position: absolute;
             }
             &:hover::after {
-                background-color: variables.$tertiary;
+                background-color: variables.$accent;
             }
             > div {
                 padding: 0.5rem;
                 border: 2px solid variables.$tertiary;
+                background-color: variables.$background;
                 border-radius: 5px;
                 display: flex;
                 flex-direction: column;

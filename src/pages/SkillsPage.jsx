@@ -40,6 +40,7 @@ export default function SkillsPage() {
                 <div className='cards'>
                     <TechCard name={'git'} image={techLogos.gitLogo}></TechCard>
                     <TechCard name={'curl'} image={techLogos.curlLogo}></TechCard>
+                    <TechCard name={'jest'} image={techLogos.jestLogo}></TechCard>
                 </div>
             </section>
         </section>

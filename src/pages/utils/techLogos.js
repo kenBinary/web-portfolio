@@ -8,6 +8,7 @@ import gitLogo from '/tech-logos/git.svg';
 import htmlLogo from '/tech-logos/html.svg';
 import javaLogo from '/tech-logos/java.svg';
 import javascriptLogo from '/tech-logos/javascript.svg';
+import jestLogo from '/tech-logos/jest.svg';
 import mariadbLogo from '/tech-logos/mariadb.svg';
 import mongodbLogo from '/tech-logos/mongodb.svg';
 import nodeLogo from '/tech-logos/nodejs.svg';
@@ -28,6 +29,7 @@ export const techLogos = {
     'htmlLogo': htmlLogo,
     'javaLogo': javaLogo,
     'javascriptLogo': javascriptLogo,
+    'jestLogo': jestLogo,
     'mariadbLogo': mariadbLogo,
     'mongodbLogo': mongodbLogo,
     'nodeLogo': nodeLogo,

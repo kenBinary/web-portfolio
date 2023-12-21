@@ -4,7 +4,7 @@ import fitsterDemo from '/device-mockups/fitster-gif-demo.gif';
 import bhDemo from '/device-mockups/bh-management-demo.gif';
 import { techLogos } from './utils/techLogos';
 export default function ProjectPage() {
-    const description1 = "Android app made as a final project requirement for my mobile app development class, made with flutter and integrated with firebase.";
+    const description1 = "Workout planner and tracker app made as a final project for my mobile app development class, made with flutter and integrated with firebase.";
     const techStack1 = {
         'dart': techLogos.dartLogo,
         'flutter': techLogos.flutterLogo,
@@ -27,7 +27,7 @@ export default function ProjectPage() {
         'express': techLogos.expressLogo,
         'mariaDB': techLogos.mariadbLogo
     };
-    const projectHighlight2 = ['database normalized up to 3rd normal form', 'database has views,procedures and transactions', 'REST api'];
+    const projectHighlight2 = ['database normalized up to 3rd normal form.', 'database has views, procedures and transactions.', 'REST api.'];
     const projectLinks2 = [
         {
             'url': 'https://github.com/kenBinary/bh-management-frontend',
