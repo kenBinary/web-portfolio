@@ -9,12 +9,10 @@ export default function SkillsPage() {
             <section className='tech-section'>
                 <h3>Languages</h3>
                 <div className='cards'>
+                    <TechCard name={'javascript'} image={techLogos.javascriptLogo}></TechCard>
+                    <TechCard name={'css'} image={techLogos.cssLogo}></TechCard>
                     <TechCard name={'html'} image={techLogos.htmlLogo}></TechCard>
                     <TechCard name={'php'} image={techLogos.phpLogo}></TechCard>
-                    <TechCard name={'css'} image={techLogos.cssLogo}></TechCard>
-                    <TechCard name={'javascript'} image={techLogos.javascriptLogo}></TechCard>
-                    <TechCard name={'python'} image={techLogos.pythonLogo}></TechCard>
-                    <TechCard name={'java'} image={techLogos.javaLogo}></TechCard>
                     <TechCard name={'dart'} image={techLogos.dartLogo}></TechCard>
                 </div>
             </section>

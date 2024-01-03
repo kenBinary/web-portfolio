@@ -25,7 +25,8 @@ export default function ProjectPage() {
     const techStack2 = {
         'react': techLogos.reactLogo,
         'express': techLogos.expressLogo,
-        'mariaDB': techLogos.mariadbLogo
+        'mariaDB': techLogos.mariadbLogo,
+        'passport': techLogos.passportLogo
     };
     const projectHighlight2 = ['database normalized up to 3rd normal form.', 'database has views, procedures and transactions.', 'REST api.'];
     const projectLinks2 = [
